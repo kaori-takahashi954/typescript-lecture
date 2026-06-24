@@ -6,3 +6,5 @@ slime.attack();
 slime.takeDamage(40);
 slime.showStatus();
 slime.attack();
+
+console.log("これはpushテスト用のログです");
