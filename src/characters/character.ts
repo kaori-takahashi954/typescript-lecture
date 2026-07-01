@@ -3,11 +3,16 @@ export abstract class Character {
   protected hp: number;
   protected power: number;
 
-  constructor(name: string, hp: number, power: number) {
+  constructor(name: string, hp: number) {
     this.name = name;
     this.hp = hp;
-    this.power = power;
+    this.power = 0;
   }
+
+  public getName() {
+    return this.name;
+  }
+  //()の中に何も書かないのは名前を取得するためであり上書きするためではないから
 
   public takeDamage(damage: number): void {
     this.hp -= damage;
